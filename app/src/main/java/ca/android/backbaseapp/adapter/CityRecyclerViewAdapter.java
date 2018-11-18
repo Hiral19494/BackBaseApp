@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import ca.android.backbaseapp.Fragment.CityFragment;
+import ca.android.backbaseapp.fragment.CityFragment;
 import ca.android.backbaseapp.R;
 import ca.android.backbaseapp.model.City;
 

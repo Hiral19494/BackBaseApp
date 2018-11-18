@@ -3,9 +3,10 @@ package ca.android.backbaseapp.activities;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
+import android.util.Log;
 
-import ca.android.backbaseapp.Fragment.CityFragment;
+import ca.android.backbaseapp.fragment.CityFragment;
+import ca.android.backbaseapp.fragment.MapFragment;
 import ca.android.backbaseapp.R;
 import ca.android.backbaseapp.model.City;
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements CityFragment.OnLi
 
     @Override
     public void onListFragmentInteraction(City city) {
-        Toast.makeText(getBaseContext(),city.getCityName(),Toast.LENGTH_LONG).show();
+        Log.d("city name:",city.getCityName());
+        addFragment(MapFragment.newInstance(city));
     }
 }

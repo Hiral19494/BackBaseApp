@@ -25,6 +25,7 @@ public class City implements Serializable {
             e.printStackTrace();
         }
     }
+
     public String getId() {
         return id;
     }

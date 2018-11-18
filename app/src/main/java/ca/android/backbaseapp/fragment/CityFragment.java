@@ -1,4 +1,4 @@
-package ca.android.backbaseapp.Fragment;
+package ca.android.backbaseapp.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,7 +64,7 @@ public class CityFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable query) {
-                Log.i(TAG, "query = " + query);
+          //      Log.i(TAG, "query = " + query);
                 if (cityAdapter != null) {
                     cityAdapter.getFilter().filter(query);
                 }
@@ -127,7 +126,7 @@ public class CityFragment extends Fragment {
         });
 
         for (City city : cityArrayList) {
-            Log.i(TAG, city.getCityName() + ", " + city.getCountryName());
+           // Log.i(TAG, city.getCityName() + ", " + city.getCountryName());
         }
     }
 
